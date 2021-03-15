@@ -1,0 +1,91 @@
+#canvas {
+	box-shadow:0 0 10px #e4ffb8;
+}
+h1 {
+	color:#4c1caa;
+	text-align:t;
+}
+body {
+	margin:0;
+	padding:0;
+	font-family:"montserrat";
+	background-image:linear-gradient(125deg,#2c3e50,#27ae60,#2980b9,#e74c3c,#8e44ad);
+	background-size:400%;
+	animation:bganimation 15s infinite;
+	text-shadow:2.5px 5px 0.3125rem royalblue;
+	color:#8E44AD;
+	font-size:sans-serif;
+}
+.box {
+	width:300px;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+.box h1 {
+	color:greenyellow;
+	text-transform:uppercase;
+	font-weight:500;
+}
+.box input[type = "text"],.box input[type = "password"] {
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #3498db;
+	padding:14px 10px;
+	width:200px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus {
+	width:280px;
+	border-color:#2ecc71;
+}
+-webkit-input-placeholder {
+	color:red;
+	font-size:20px;
+	line-height:50px;
+}
+.box input[type = "submit"] {
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #2ecc71;
+	padding:14px 40px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;
+	cursor:pointer;
+}
+.box input[type = "submit"]:hover {
+	background:#2ecc71;
+}
+.text {
+	color:white;
+	text-align:center;
+	text-transform:uppercase;
+	margin:0px 0;
+
+font-size:22px;
+}
+@keyframes bganimation {
+	0% {
+	background-position:0% 50%;
+}
+50% {
+	background-position:100% 50%;
+}
+100% {
+	background-position:0% 50%;
+}
+}

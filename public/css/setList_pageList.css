@@ -1,0 +1,36 @@
+.pageList{
+    width: 1200px;
+    height: 50px;
+    background: #DEE1E6;
+    display: flex;
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+}
+.innerPage{
+    height: 35px;
+    width: auto;
+    max-width: 490px;
+    overflow: hidden;
+    display: flex;
+}
+.innerPage>span{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    line-height: 35px;
+    text-align: center;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.innerPage>span:hover{
+    background: orangered;
+    color: white;
+}
+.pageList button{
+    height: 35px;
+}
+.innerPage>span.active{
+    background: orangered;
+    color: white;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../../public/css/setList.css">
+    <link rel="stylesheet" href="../../public/css/dialog.css"> -->
+    <link rel="stylesheet" href="css/setList.css">
+    <link rel="stylesheet" href="css/dialog.css">
+    <link rel="stylesheet" href="css/setList_pageList.css">
+    <title>后台api管理</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="head">
+            <span>姓名</span><input type="text" placeholder="请输入姓名" name="" id="findMes">
+            <button style="margin: 0 12px;" class="find">查询</button><button class="reset">重置</button>
+        </div>
+        <div class="addLine">
+            <div><span class="add">+</span><span class="add">添加</span></div>
+        </div>
+        <div class="userList">
+            <div>姓名</div>
+            <div>工号</div>
+            <div>手机号</div>
+            <div>产品名称</div>
+            <div>技能等级</div>
+            <div>用户类型</div>
+            <div>操作</div>
+        </div>
+        <div class="pageList">
+            <button class="prevPage" disabled>上一页</button>
+            <div class="innerPage"></div>
+            <button class="nexPage" >下一页</button>
+        </div>
+    </div>
+    
+    <div class="mask">
+        <div class="mask_box">
+            <div class="mask_head"><span>添加</span><span class="close">x</span></div>
+            <div class="mask_body">
+                <div>姓名</div>
+                <div><input type="text" placeholder="请输入姓名" class="name"></div>
+                <div>工号</div>
+                <div><input type="text" placeholder="请输入工号" class="jobNumber"></div>
+                <div>手机号</div>
+                <div><input type="text" placeholder="请输入手机号" class="phone"></div>
+                <div>产品名称</div>
+                <div><input type="text" placeholder="请输入产品名称" class="designation"></div>
+                <div>技能等级</div>
+                <div><select name="" id="" class="grade">
+                        <option value="一级">一级</option>
+                        <option value="二级">二级</option>
+                        <option value="三级">三级</option>
+                    </select></div>
+                <div>用户类型</div>
+                <div><select name="" id="" class="gradeName">
+                        <option value="初级">初级</option>
+                        <option value="中级">中级</option>
+                        <option value="高级">高级</option>
+                    </select></div>
+            </div>
+            <div class="mask_footer"><button class="cancel">取消</button><button class="result">确定</button></div>
+        </div>
+    </div>
+    <script src="js/axios.js"></script>
+    <script>
+        
+    </script>
+    <script src="js/setList.js"></script>
+</body>
+
+</html>
